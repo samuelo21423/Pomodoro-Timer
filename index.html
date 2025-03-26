@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel = "stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Pomodoro Timer</h1>
+        </nav>
+    </header>
+
+    <main>
+        <div id="apple-container">
+            <!-- Apple SVG -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="450" height="450">
+                <circle cx="50" cy="50" r="40" fill="red" />
+                <rect x="48" y="-10" width="3" height="20" fill="green"/>
+            </svg>  
+            <p id="timer">25:00</p>
+        </div>
+
+        <div id="controls">
+            <button id="start">Start</button>
+            <button id="pause">Pause</button>
+            <button id="stop">Stop</button>
+        </div>
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

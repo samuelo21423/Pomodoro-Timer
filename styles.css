@@ -1,0 +1,123 @@
+nav {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    height: 60px;
+    line-height: 70px;
+}
+
+
+body {
+    background-color: lightblue; /* Light blue background */
+    display: flex;
+    flex-direction: column; /* Stacks header & main content vertically */
+    justify-content: center; /* Centers vertically */
+    align-items: center; /* Centers horizontally */
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default body margin */
+    text-align: center; /* Ensures text is centered */
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    top: -40px;
+    font-size: 40px;
+} 
+
+#apple-container {
+    display: flex;            /* Enables flexbox */
+    justify-content: center;  /* Centers horizontally */
+    align-items: center;      /* Centers vertically */
+    position: relative;       /* Needed for absolute positioning of timer */
+    width: 450px;             /* Matches SVG size */
+    height: 450px;            /* Matches SVG size */
+}
+
+button {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 15px 25px; /* 15px padding top and bottom, 20px on the left and right */
+    border: none; /* removes default border */
+    font-size: 24px;
+    border-radius: 15px;
+    cursor: pointer; /* clickability */
+}
+
+#timer {
+    position: absolute;
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif; 
+    color: white;
+}
+
+#timer:hover {
+    color: yellow;
+}
+
+#timer.critical {
+    color: red;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+/* Start Button Styling */
+#start {
+    background-color: green;
+}
+
+#start:hover {
+    background-color: #3e8e41; 
+    border: 2px solid black
+}
+
+#start:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+    box-shadow: 0 5px #666; /* Shadow reduces when pressed, syntax: box-shadow: horizontal-offset vertical-offset blur-radius spread-radius color */
+}
+
+/* Pause Button Styling */
+#pause {
+    background-color: yellow;
+}
+
+#pause:hover {
+    background-color: rgba(255, 255, 0, .8);
+    border: 2px solid black
+}
+
+#pause:active {
+    background-color: rgba(255, 255, 0, .8);
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
+
+/* Stop Button Styling */
+#stop {
+    background-color: red;
+}
+
+#stop:hover {
+    background-color: rgba(255, 0, 0, 0.8); /* Darker red on hover */
+    border: 2px solid black
+    
+}
+
+#stop:active {
+    background-color: rgba(255, 0, 0, 0.742);
+    transform: translateY(4px);
+    box-shadow: 0 5px #666;
+}
+
+
